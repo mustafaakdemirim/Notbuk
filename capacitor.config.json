@@ -1,0 +1,6 @@
+{
+  "appId": "com.mustafaakdemir.notbuk",
+  "appName": "Notbük",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

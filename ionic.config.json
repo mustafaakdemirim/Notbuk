@@ -1,0 +1,7 @@
+{
+  "name": "Notbük",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

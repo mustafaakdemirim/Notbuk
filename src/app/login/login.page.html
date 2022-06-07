@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <img style="margin-left: 150px;" src="assets/background/logo.png" width="25" height="25">
+    <ion-title style="margin-left: 20px;">Notbük</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="hero">
+  <video src="assets/background/logindAndSignupBackground.mp4" autoplay loop muted></video>
+  <div id="content">
+    <img style="margin-left: 100px; margin-top: 150px;" src="assets/background/logo.png" width="185px" height="185px">
+    <div class="container" style="margin-top: 50px;">
+		<ion-list inset>
+			<ion-item>
+				<ion-input type="text" placeholder="E-Posta" [(ngModel)]="eposta"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-input type="password" placeholder="Parola" [(ngModel)]="parola"></ion-input>
+			</ion-item>
+		</ion-list>
+
+		<div class="ion-padding-horizontal">
+			<div>{{ girisHata }}</div>
+
+      <div class="login-footer">
+        <div><ion-button size="small" fill="outline" (click)="presentAlertPrompt()">Şifremi Unuttum</ion-button></div>
+
+			<ion-button color="primary" (click)="login()">
+        <ion-icon slot="start" name="key"></ion-icon>
+        Giriş Yap
+      </ion-button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <ion-button id="kayitol" ion-button icon-left block clear [routerLink]="['/signup']">
+        <ion-icon  slot="start" name="person-add"></ion-icon>
+        Kayıt Ol
+      </ion-button>
+			</div>
+		    </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
